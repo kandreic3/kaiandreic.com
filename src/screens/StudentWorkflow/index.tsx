@@ -1,12 +1,7 @@
-import { Bar } from "./components/Bar";
 import { Button } from "./components/Button";
 import { FormCheckbox } from "./components/FormCheckbox";
 import { FormInput } from "./components/FormInput";
-import { FormInputWrapper } from "./components/FormInputWrapper";
 import { FormSelect } from "./components/FormSelect";
-import { Header } from "./components/Header";
-import { Response } from "./components/Response";
-import { ResponseWrapper } from "./components/ResponseWrapper";
 
 export const StudentWorkflow = (): JSX.Element => {
   return (

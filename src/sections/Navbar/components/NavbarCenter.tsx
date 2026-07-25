@@ -17,7 +17,7 @@ export const NavbarCenter = ({ onClick }: NavbarCenterProps) => {
         className="text-[40px] md:text-[48px] leading-[0.9] tracking-[-0.02em] cursor-pointer select-none transition-transform duration-200 hover:scale-[1.04] active:scale-[0.985]"
         style={{
           fontFamily:
-            "'Baloo Bhai 2', 'PP Neue Montreal', 'PPNouveauMontreal', sans-serif",
+            "'Jalnan2', 'PP Neue Montreal', 'PPNouveauMontreal', sans-serif",
           fontWeight: 800,
           color: "#111111",
           textShadow:

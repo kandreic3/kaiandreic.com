@@ -50,14 +50,14 @@ export const Hero = () => {
               {[
                 {
                   label: "1 / 4",
-                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777050250/Burke_Museum_pzgb10.png",
+                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_900,c_limit/v1777050250/Burke_Museum_pzgb10.png",
                   href: "/burkemuseum",
                   text: "Burke Museum",
                   cls: "w-[66.66vw] md:w-[calc(40%_-_13.3333px)] mr-5",
                 },
                 {
                   label: "2 / 4",
-                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777050021/Chimu_escc5h.png",
+                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_900,c_limit/v1777050021/Chimu_escc5h.png",
                   href: "#",
                   text: "Chimu",
                   disabled: true,
@@ -65,14 +65,14 @@ export const Hero = () => {
                 },
                 {
                   label: "3 / 4",
-                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777049980/Recognize_w98sxb.png",
+                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_900,c_limit/v1777049980/Recognize_w98sxb.png",
                   href: "/recognize",
                   text: "Recognize.app",
                   cls: "w-[66.66vw] md:w-[calc(40%_-_13.3333px)] mr-5",
                 },
                 {
                   label: "4 / 4",
-                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777050104/Ocean_Watch_Thumbnail_as4zjx.png",
+                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_900,c_limit/v1777050104/Ocean_Watch_Thumbnail_as4zjx.png",
                   href: "/oceanwatch",
                   text: "Ocean Watch",
                   cls: "w-[66.66vw] md:w-[calc(40%_-_13.3333px)]",
@@ -88,6 +88,8 @@ export const Hero = () => {
                     {card.disabled ? (
                       <div className="relative box-border min-h-[auto] min-w-[auto] overflow-hidden img-zoom">
                         <img
+          loading="lazy"
+          decoding="async"
                           src={card.img}
                           alt={card.text}
                           className="aspect-[auto_1365_/_2048] box-border h-full max-w-full object-cover w-full"
@@ -102,6 +104,8 @@ export const Hero = () => {
                         className="box-border min-h-[auto] min-w-[auto] overflow-hidden img-zoom block"
                       >
                         <img
+          loading="lazy"
+          decoding="async"
                           src={card.img}
                           alt={card.text}
                           className="aspect-[auto_1365_/_2048] box-border h-full max-w-full object-cover w-full"
@@ -110,6 +114,8 @@ export const Hero = () => {
                     ) : (
                       <div className="box-border min-h-[auto] min-w-[auto] overflow-hidden img-zoom">
                         <img
+          loading="lazy"
+          decoding="async"
                           src={card.img}
                           alt={card.text}
                           className="aspect-[auto_1365_/_2048] box-border h-full max-w-full object-cover w-full"
@@ -182,49 +188,49 @@ export const Hero = () => {
               {[
                 {
                   label: "1/10",
-                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777050713/IMG_0108_zssptz.jpg",
+                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_700,c_limit/v1777050713/IMG_0108_zssptz.jpg",
                   aspect: "aspect-[auto_3_/_4]",
                   href: "#",
                   text: "Flowers",
                 },
                 {
                   label: "2/10",
-                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777050673/IMG_0509_rkdyno.jpg",
+                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_700,c_limit/v1777050673/IMG_0509_rkdyno.jpg",
                   aspect: "aspect-[auto_3_/_4]",
                   href: "#",
                   text: "Friends",
                 },
                 {
                   label: "3/10",
-                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777050744/IMG_0256_wvvu7q.jpg",
+                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_700,c_limit/v1777050744/IMG_0256_wvvu7q.jpg",
                   aspect: "aspect-[auto_3_/_4]",
                   href: "#",
                   text: "Pets",
                 },
                 {
                   label: "4/10",
-                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777050753/IMG_0035_ip3p91.jpg",
+                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_700,c_limit/v1777050753/IMG_0035_ip3p91.jpg",
                   aspect: "aspect-[auto_3_/_4]",
                   href: "#",
                   text: "Art",
                 },
                 {
                   label: "5/10",
-                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777050766/IMG_3372_mx8h5m.jpg",
+                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_700,c_limit/v1777050766/IMG_3372_mx8h5m.jpg",
                   aspect: "aspect-[auto_3_/_4]",
                   href: "#",
                   text: "Fashion",
                 },
                 {
                   label: "6/10",
-                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777050760/IMG_2965_sdo4wt.jpg",
+                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_700,c_limit/v1777050760/IMG_2965_sdo4wt.jpg",
                   aspect: "aspect-[auto_3_/_4]",
                   href: "#",
                   text: "Architecture",
                 },
                 {
                   label: "7/10",
-                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777050772/IMG_2922_mso2zj.jpg",
+                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_700,c_limit/v1777050772/IMG_2922_mso2zj.jpg",
                   aspect: "aspect-[auto_3_/_4]",
                   href: "#",
                   text: "Food",
@@ -239,6 +245,8 @@ export const Hero = () => {
                   <div className="box-border flex flex-col gap-y-2.5">
                     <div className="box-border min-h-[auto] min-w-[auto] overflow-hidden img-zoom">
                       <img
+          loading="lazy"
+          decoding="async"
                         src={card.img}
                         alt=""
                         className={`${card.aspect} box-border h-full max-w-full object-cover w-full`}
@@ -260,7 +268,9 @@ export const Hero = () => {
           </div>
           <div className="box-border pt-[60px] pb-[90px] px-5">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/kai-andreic-107074193"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[37.625px] box-border tracking-[-1.88125px] leading-[45.15px] border-b-4 border-solid font-b hover:border-transparent transition-colors duration-300 md:text-[51.2px] md:tracking-[-2.56px] md:leading-[61.44px] md:border-b-[6px]"
             >
               Learn More About Me
@@ -276,7 +286,9 @@ export const Hero = () => {
         >
           <div className="absolute box-border h-full pointer-events-none w-full overflow-hidden left-0 top-0">
             <img
-              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777050043/IMG_0335_tbne9p.jpg"
+          loading="lazy"
+          decoding="async"
+              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_2000,c_limit/v1777050043/IMG_0335_tbne9p.jpg"
               alt=""
               className="aspect-[auto_1500_/_716] box-border h-full max-w-full object-cover w-full scale-110"
             />
@@ -444,7 +456,9 @@ const FooterInline = () => {
         <div className="absolute box-border flex h-full justify-center pointer-events-none w-full z-0 left-0 top-0">
           <div className="relative aspect-[124_/_156] box-border min-h-[auto] min-w-[auto]">
             <img
-              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/v1784070460/IMG_0347_zot3zi.jpg"
+          loading="lazy"
+          decoding="async"
+              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_600,c_limit/v1784070460/IMG_0347_zot3zi.jpg"
               alt=""
               className="box-border h-full max-w-full w-full"
               style={{ objectFit: "cover", objectPosition: "center top" }}

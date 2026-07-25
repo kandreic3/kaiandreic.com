@@ -1,9 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "../../sections/Navbar";
-import { FooterLinks } from "../../sections/Footer/components/FooterLinks";
-import { FooterBrand } from "../../sections/Footer/components/FooterBrand";
-import { FooterBottom } from "../../sections/Footer/components/FooterBottom";
 
 const BurkeMuseumPage = () => {
   useEffect(() => {
@@ -78,7 +75,7 @@ const BurkeMuseumPage = () => {
         style={{ paddingTop: "70px", height: "clamp(280px, 45vw, 560px)" }}
       >
         <img
-          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto:best,dpr_3.0,w_3800,c_limit,e_sharpen:120/v1777050250/Burke_Museum_pzgb10.png"
+          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_2000,c_limit/v1777050250/Burke_Museum_pzgb10.png"
           alt="Burke Museum — laptop and phone mockup"
           className="w-full h-full object-cover object-center"
         />
@@ -1064,6 +1061,8 @@ const BurkeMuseumPage = () => {
           >
             {/* dino skull — top-left */}
             <img
+          loading="lazy"
+          decoding="async"
               src="https://c.animaapp.com/mnnib5ym6YgLgh/img/uploaded-asset-1779843092193-0.png"
               alt=""
               aria-hidden="true"
@@ -1078,6 +1077,8 @@ const BurkeMuseumPage = () => {
 
             {/* dino footprints — bottom-right */}
             <img
+          loading="lazy"
+          decoding="async"
               src="https://c.animaapp.com/mnnib5ym6YgLgh/img/uploaded-asset-1779843092194-1.png"
               alt=""
               aria-hidden="true"
@@ -1092,6 +1093,8 @@ const BurkeMuseumPage = () => {
 
             {/* leaf — bottom-left */}
             <img
+          loading="lazy"
+          decoding="async"
               src="https://c.animaapp.com/mnnib5ym6YgLgh/img/uploaded-asset-1779843092199-2.png"
               alt=""
               aria-hidden="true"
@@ -1128,7 +1131,9 @@ const BurkeMuseumPage = () => {
                 }}
               >
                 <img
-                  src="https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777420872/Burke_Pages_ive2r8.webp"
+          loading="lazy"
+          decoding="async"
+                  src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1800,c_limit/v1777420872/Burke_Pages_ive2r8.webp"
                   alt="Burke Museum — final design desktop page layouts"
                   className="w-full object-contain block"
                   style={{
@@ -1168,6 +1173,8 @@ const BurkeMuseumPage = () => {
           >
             {/* dino skull — top-left */}
             <img
+          loading="lazy"
+          decoding="async"
               src="https://c.animaapp.com/mnnib5ym6YgLgh/img/uploaded-asset-1779843092193-0.png"
               alt=""
               aria-hidden="true"
@@ -1182,6 +1189,8 @@ const BurkeMuseumPage = () => {
 
             {/* footprints — top-right */}
             <img
+          loading="lazy"
+          decoding="async"
               src="https://c.animaapp.com/mnnib5ym6YgLgh/img/uploaded-asset-1779843092194-1.png"
               alt=""
               aria-hidden="true"
@@ -1196,6 +1205,8 @@ const BurkeMuseumPage = () => {
 
             {/* leaf — bottom-right */}
             <img
+          loading="lazy"
+          decoding="async"
               src="https://c.animaapp.com/mnnib5ym6YgLgh/img/uploaded-asset-1779843092199-2.png"
               alt=""
               aria-hidden="true"
@@ -1232,7 +1243,9 @@ const BurkeMuseumPage = () => {
                     }}
                   >
                     <img
-                      src="https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777425128/Mobile_-_Home_Page_guhadm.png"
+          loading="lazy"
+          decoding="async"
+                      src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_500,c_limit/v1777425128/Mobile_-_Home_Page_guhadm.png"
                       alt="Burke Museum — mobile home page"
                       className="w-full object-contain block"
                     />
@@ -1259,7 +1272,9 @@ const BurkeMuseumPage = () => {
                     }}
                   >
                     <img
-                      src="https://res.cloudinary.com/dkdwqtlzz/image/upload/v1777425128/Mobile_-_Arts_Culture_Page_sa4dra.png"
+          loading="lazy"
+          decoding="async"
+                      src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_500,c_limit/v1777425128/Mobile_-_Arts_Culture_Page_sa4dra.png"
                       alt="Burke Museum — mobile arts &amp; culture page"
                       className="w-full object-contain block"
                     />
@@ -1472,17 +1487,16 @@ const BurkeMuseumPage = () => {
             >
               &#169; Kai Andreic
             </span>
-            <a
-              href="#"
-              className="text-xs transition-opacity hover:opacity-70"
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="text-xs transition-opacity hover:opacity-70 bg-transparent border-none cursor-pointer"
               style={{
                 color: "rgba(253,250,245,0.6)",
                 fontFamily: "'PP Neue Montreal','PPNeueMontreal',sans-serif",
-                textDecoration: "none",
               }}
             >
               Back to top ↑
-            </a>
+            </button>
           </div>
         </div>
       </div>

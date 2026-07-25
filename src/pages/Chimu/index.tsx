@@ -79,7 +79,7 @@ const ChimuPage = () => {
         }}
       >
         <img
-          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto:best,dpr_3.0,w_3800,c_limit,e_sharpen:120/v1777050021/Chimu_escc5h.png"
+          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_2000,c_limit/v1777050021/Chimu_escc5h.png"
           alt="Chimu cover"
           className="w-full h-full object-cover"
         />

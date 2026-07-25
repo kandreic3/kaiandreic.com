@@ -182,67 +182,20 @@ body {
 }
 
 /* ─── Scroll-reveal ─────────────────────────────────────────────────────── */
-/* Base state: fade + lift + soft blur */
+/* Base state: fade + lift */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
-  filter: blur(0px);
   transition:
     opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
-    filter 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform, filter;
+    transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
 }
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
-  filter: blur(0px);
 }
 
-/* Section number labels get a focus-pull blur entrance */
-.reveal-blur {
-  opacity: 0;
-  transform: translateY(16px);
-  filter: blur(4px);
-  transition:
-    opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-    filter 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform, filter;
-}
-.reveal-blur.visible {
-  opacity: 1;
-  transform: translateY(0);
-  filter: blur(0px);
-}
-
-/* Stagger delay utilities — used on child items inside grids */
-.stagger-0 {
-  transition-delay: 0ms;
-}
-.stagger-1 {
-  transition-delay: 80ms;
-}
-.stagger-2 {
-  transition-delay: 160ms;
-}
-.stagger-3 {
-  transition-delay: 240ms;
-}
-.stagger-4 {
-  transition-delay: 320ms;
-}
-.stagger-5 {
-  transition-delay: 400ms;
-}
-.stagger-6 {
-  transition-delay: 480ms;
-}
-.stagger-7 {
-  transition-delay: 560ms;
-}
-
-/* Legacy delay aliases — kept for compatibility */
 .reveal-delay-1 {
   transition-delay: 0.06s;
 }
@@ -262,16 +215,6 @@ body {
 }
 .img-zoom:hover img {
   transform: scale(1.04);
-}
-
-/* Smooth underline link */
-.link-underline {
-  position: relative;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.25s ease;
-}
-.link-underline:hover {
-  border-color: #000;
 }
 
 /* Nav scroll background */
@@ -329,22 +272,6 @@ body.has-focused-section .section-blur-wrapper.section-active {
   display: none;
 }
 
-@font-face {
-  font-family: "m";
-  src: url("https://farahgorayeb.b-cdn.net/wp-content/themes/farahgorayeb/assets/fonts/PFR7CPtrVbFgulfXm6qE.woff2")
-    format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "b";
-  src: url("https://farahgorayeb.b-cdn.net/wp-content/themes/farahgorayeb/assets/fonts/V7aXs3xHmV53f8vQc7wo.woff2")
-    format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
 /* PP Neue Montreal */
 body,
 p,
@@ -358,17 +285,17 @@ input,
 textarea,
 select {
   font-family:
-    "PP Neue Montreal", "PPNouveauMontreal", "m", ui-sans-serif, system-ui,
+    "PP Neue Montreal", "PPNouveauMontreal", ui-sans-serif, system-ui,
     sans-serif;
 }
 .font-m {
   font-family:
-    "PP Neue Montreal", "PPNouveauMontreal", "m", ui-sans-serif, system-ui,
+    "PP Neue Montreal", "PPNouveauMontreal", ui-sans-serif, system-ui,
     sans-serif;
 }
 .font-b {
   font-family:
-    "PP Neue Montreal", "PPNouveauMontreal", "m", ui-sans-serif, system-ui,
+    "PP Neue Montreal", "PPNouveauMontreal", ui-sans-serif, system-ui,
     sans-serif;
   font-weight: 500;
 }
@@ -397,34 +324,6 @@ h6 {
   font-weight: 400;
 }
 
-/* Split-color text */
-.split-color-text {
-  position: relative;
-  display: inline-block;
-  color: #1a1a1a;
-}
-.split-color-overlay {
-  position: absolute;
-  inset: 0;
-  color: white;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-/* Hero float animation */
-@keyframes editorial-float {
-  0%,
-  100% {
-    transform: translate(-50%, -50%) translateY(0px);
-  }
-  50% {
-    transform: translate(-50%, -50%) translateY(-10px);
-  }
-}
-.editorial-float {
-  animation: editorial-float 6s ease-in-out infinite;
-}
-
 /* Hero line reveal */
 @keyframes line-reveal {
   from {
@@ -444,7 +343,4 @@ h6 {
 }
 .line-reveal-3 {
   animation: line-reveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both;
-}
-.line-reveal-4 {
-  animation: line-reveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
 }
