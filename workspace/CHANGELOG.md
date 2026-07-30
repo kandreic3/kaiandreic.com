@@ -19,6 +19,44 @@ You MUST maintain this file to track your work across messages. This is NON-NEGO
 
 <changelog>
 
+## 2026-07-30 — Swap footer fonts on all 4 project pages
+- "Kai Andreic" + "Product Designer" → PP Editorial Old with liga/calt/dlig ligatures
+- Contact, email, Socials, LinkedIn, © copyright, Back to top → PP Neue Montreal
+- Files: `src/pages/BurkeMuseum/index.tsx`, `src/pages/Chimu/index.tsx`, `src/pages/OceanWatch/index.tsx`, `src/pages/RecognizeApp/index.tsx`
+
+## 2026-07-30 — Restore PP Editorial Old on all project page footers
+- Replaced PP Neue Montreal inline fontFamily with PP Editorial Old + ligature feature settings on Contact, email, Socials, LinkedIn, © copyright, and Back to top elements
+- Files touched: `src/pages/BurkeMuseum/index.tsx`, `src/pages/Chimu/index.tsx`, `src/pages/OceanWatch/index.tsx`, `src/pages/RecognizeApp/index.tsx`
+
+## 2026-07-30 — Change global default body font to PP Neue Montreal
+- Replaced PP Editorial Old with PP Neue Montreal as the global default in `tailwind.css`
+- Affects `body, p, a, button, span, li, div, label, input, textarea, select`, `.font-m`, `.font-b`
+- Headings (`h1`–`h6`), `.hero-editorial`, `.font-editorial` still use PP Editorial Old
+- File touched: `tailwind.css`
+
+## 2026-07-30 — Change UNDER CONSTRUCTION banner font to PP Neue Montreal
+- Added inline `fontFamily` style to the "UNDER CONSTRUCTION" diagonal banner on the Chimu project card
+- File touched: `src/sections/Hero/index.tsx`
+
+## 2026-07-30 — Fix broken Cloudinary image URLs
+- Stripped invalid `v1777...` version tokens from ALL Cloudinary image URLs across Hero, BurkeMuseum, Chimu, OceanWatch, RecognizeApp pages
+- Version tokens were future-dated causing 404s on 11 of 13 images site-wide
+- Files touched: `src/sections/Hero/index.tsx`, `src/pages/BurkeMuseum/index.tsx`, `src/pages/Chimu/index.tsx`, `src/pages/OceanWatch/index.tsx`, `src/pages/RecognizeApp/index.tsx`
+- Also added direct `@font-face` for PP Neue Montreal in `index.html` as backup to cdnfonts.com CDN
+
+## 2026-07-30 — Apply PP Editorial Old to all footer text
+- Added PP Editorial Old font style to `FooterColumn` (titles and all links) and `FooterBottom` ("© Kai Andreic", "Back to top ↑")
+- `FooterBrand` already used PP Editorial Old; now all footer elements are consistent
+- Files touched: `src/sections/Footer/components/FooterColumn.tsx`, `src/sections/Footer/components/FooterBottom.tsx`
+
+## 2026-07-28 — Sync from GitHub main branch
+- Compared all project files against `kandreic3/kaiandreic.com` main branch via GitHub raw URLs
+- NavbarCenter: reverted font from `Baloo Bhai 2` back to `Jalnan2` (GitHub source)
+- Hero: added `f_auto,q_auto,w_900,c_limit` to project card Cloudinary URLs; `f_auto,q_auto,w_700,c_limit` to passion grid URLs
+- Hero: added `loading="lazy" decoding="async"` to all project card and passion grid images
+- Hero: "Learn More About Me" now links to LinkedIn (was `#`)
+- All page files (BurkeMuseum, OceanWatch, RecognizeApp, Chimu), App.tsx were already identical to GitHub
+
 ## 2026-07-24 — Fix background color consistency
 - Changed Tailwind `--background` token from pure white (`0 0% 100%`) to warm cream (`40 60% 98%` ≈ `#fdfaf5`) in `tailwind.css`
 - This aligns `body` bg-background with the app wrapper and loader which already used `#fdfaf5`

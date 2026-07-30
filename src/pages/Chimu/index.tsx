@@ -79,7 +79,7 @@ const ChimuPage = () => {
         }}
       >
         <img
-          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_2000,c_limit/v1777050021/Chimu_escc5h.png"
+          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto:best,dpr_3.0,w_3800,c_limit,e_sharpen:120/Chimu_escc5h.png"
           alt="Chimu cover"
           className="w-full h-full object-cover"
         />
@@ -930,7 +930,8 @@ const ChimuPage = () => {
                 className="text-[10px] uppercase tracking-widest"
                 style={{
                   color: "rgba(253,250,245,0.45)",
-                  fontFamily: "'PP Neue Montreal','PPNeueMontreal',sans-serif",
+                  fontFamily:
+                    "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                 }}
               >
                 Contact
@@ -940,7 +941,8 @@ const ChimuPage = () => {
                 className="text-sm transition-opacity hover:opacity-70"
                 style={{
                   color: "#fdfaf5",
-                  fontFamily: "'PP Neue Montreal','PPNeueMontreal',sans-serif",
+                  fontFamily:
+                    "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                   textDecoration: "none",
                 }}
               >
@@ -952,7 +954,8 @@ const ChimuPage = () => {
                 className="text-[10px] uppercase tracking-widest"
                 style={{
                   color: "rgba(253,250,245,0.45)",
-                  fontFamily: "'PP Neue Montreal','PPNeueMontreal',sans-serif",
+                  fontFamily:
+                    "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                 }}
               >
                 Socials
@@ -964,7 +967,8 @@ const ChimuPage = () => {
                 className="text-sm transition-opacity hover:opacity-70"
                 style={{
                   color: "#fdfaf5",
-                  fontFamily: "'PP Neue Montreal','PPNeueMontreal',sans-serif",
+                  fontFamily:
+                    "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                   textDecoration: "none",
                 }}
               >
@@ -996,7 +1000,8 @@ const ChimuPage = () => {
               className="text-xs"
               style={{
                 color: "rgba(253,250,245,0.45)",
-                fontFamily: "'PP Neue Montreal','PPNeueMontreal',sans-serif",
+                fontFamily:
+                  "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
               }}
             >
               &#169; 2025 Kai Andreic
@@ -1006,7 +1011,8 @@ const ChimuPage = () => {
               className="text-xs transition-opacity hover:opacity-70 bg-transparent border-none cursor-pointer"
               style={{
                 color: "rgba(253,250,245,0.6)",
-                fontFamily: "'PP Neue Montreal','PPNeueMontreal',sans-serif",
+                fontFamily:
+                  "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
               }}
             >
               Back to top ↑

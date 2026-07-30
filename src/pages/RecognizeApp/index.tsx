@@ -279,8 +279,6 @@ const VizCarousel = ({
               }}
             >
               <img
-          loading="lazy"
-          decoding="async"
                 src={viz.img}
                 alt={viz.imgAlt}
                 style={{
@@ -466,7 +464,7 @@ const RecognizeAppPage = () => {
         style={{ paddingTop: "70px", height: "clamp(280px,45vw,560px)" }}
       >
         <img
-          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_2000,c_limit/v1777049980/Recognize_w98sxb.png"
+          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto:best,dpr_3.0,w_3800,c_limit,e_sharpen:120/Recognize_w98sxb.png"
           alt="Recognize.app — cover"
           className="w-full h-full object-cover object-center"
         />
@@ -874,8 +872,6 @@ const RecognizeAppPage = () => {
                   }}
                 >
                   <img
-          loading="lazy"
-          decoding="async"
                     src={comp.logo}
                     alt={comp.name}
                     className="w-7 h-7 object-contain"
@@ -1334,7 +1330,7 @@ const RecognizeAppPage = () => {
               tagColor: accent,
               title: "AI Recognition Summary",
               desc: "A concise AI-generated summary of recognitions for a selected period. Core themes surface instantly — no manual reading.",
-              img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_1200/v1777920906/Ai_Summarizations_orwkp9.png",
+              img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_1200/Ai_Summarizations_orwkp9.png",
               imgAlt: "AI Recognition Summary",
               flip: false,
             },
@@ -1345,7 +1341,7 @@ const RecognizeAppPage = () => {
               tagColor: accent,
               title: "Highly Valued Recognition",
               desc: "The single most impactful recognition in the period — surfaced by prompt engineering that finds genuine high-value contribution.",
-              img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_1200/v1777921010/Highly_valued_u5r8b9.webp",
+              img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_1200/Highly_valued_u5r8b9.webp",
               imgAlt: "Highly Valued Recognition",
               flip: true,
             },
@@ -1356,7 +1352,7 @@ const RecognizeAppPage = () => {
               tagColor: accent,
               title: "Recognition Sentiment Analysis",
               desc: "AI-categorized emotional tone — supportive, grateful, celebratory, motivational. Quality of recognition, not just volume.",
-              img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_1200/v1777920884/Bar_Chart_1_bsvmrm.png",
+              img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_1200/Bar_Chart_1_bsvmrm.png",
               imgAlt: "Recognition Sentiment Analysis",
               flip: false,
             },
@@ -1367,7 +1363,7 @@ const RecognizeAppPage = () => {
               tagColor: "#7a6e63",
               title: "Recognitions Received",
               desc: "Recognition origin by department — see whether appreciation stays within the team or spans cross-functional partners.",
-              img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_1200/v1777921023/New_pie_chart_bdx0bc.webp",
+              img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_1200/New_pie_chart_bdx0bc.webp",
               imgAlt: "Recognitions Received pie chart",
               flip: true,
             },
@@ -1378,7 +1374,7 @@ const RecognizeAppPage = () => {
               tagColor: "#7a6e63",
               title: "Recognitions Over Time",
               desc: "Line chart per award type — Collaboration, Innovation, Leadership. Reveals patterns, spikes, and drops across any time window.",
-              img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_1200/v1777920994/Bar_chart_engegk.webp",
+              img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_1200/Bar_chart_engegk.webp",
               imgAlt: "Recognitions Over Time",
               flip: false,
             },
@@ -1430,9 +1426,7 @@ const RecognizeAppPage = () => {
           </div>
         </div>
         <img
-          loading="lazy"
-          decoding="async"
-          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_2200/v1777920848/aoisdhosa_riuxtv.png"
+          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_2200/aoisdhosa_riuxtv.png"
           alt="Recognize.app — finalized data visualization HUD"
           className="w-full object-contain"
           style={{ borderRadius: "8px", backgroundColor: accentMuted }}
@@ -1478,9 +1472,7 @@ const RecognizeAppPage = () => {
               </div>
               <div className="flex items-center gap-3 pt-4 border-t border-black/8 mt-auto">
                 <img
-          loading="lazy"
-          decoding="async"
-                  src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_200,c_limit/v1777942326/image-10de4f4b-1437-44b5-b59e-26482d4dcf3a_yuiw67.webp"
+                  src="https://res.cloudinary.com/dkdwqtlzz/image/upload/image-10de4f4b-1437-44b5-b59e-26482d4dcf3a_yuiw67.webp"
                   alt="Zach Grande"
                   className="w-8 h-8 rounded-full object-cover object-center shrink-0"
                   style={{ border: `1.5px solid ${accentMid}` }}
@@ -1673,7 +1665,8 @@ const RecognizeAppPage = () => {
                 className="text-[10px] uppercase tracking-widest"
                 style={{
                   color: "rgba(253,250,245,0.45)",
-                  fontFamily: "'PP Neue Montreal','PPNeueMontreal',sans-serif",
+                  fontFamily:
+                    "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                 }}
               >
                 Contact
@@ -1683,7 +1676,8 @@ const RecognizeAppPage = () => {
                 className="text-sm transition-opacity hover:opacity-70"
                 style={{
                   color: "#fdfaf5",
-                  fontFamily: "'PP Neue Montreal','PPNeueMontreal',sans-serif",
+                  fontFamily:
+                    "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                   textDecoration: "none",
                 }}
               >
@@ -1695,7 +1689,8 @@ const RecognizeAppPage = () => {
                 className="text-[10px] uppercase tracking-widest"
                 style={{
                   color: "rgba(253,250,245,0.45)",
-                  fontFamily: "'PP Neue Montreal','PPNeueMontreal',sans-serif",
+                  fontFamily:
+                    "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                 }}
               >
                 Socials
@@ -1707,7 +1702,8 @@ const RecognizeAppPage = () => {
                 className="text-sm transition-opacity hover:opacity-70"
                 style={{
                   color: "#fdfaf5",
-                  fontFamily: "'PP Neue Montreal','PPNeueMontreal',sans-serif",
+                  fontFamily:
+                    "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                   textDecoration: "none",
                 }}
               >
@@ -1739,7 +1735,8 @@ const RecognizeAppPage = () => {
               className="text-xs"
               style={{
                 color: "rgba(253,250,245,0.45)",
-                fontFamily: "'PP Neue Montreal','PPNeueMontreal',sans-serif",
+                fontFamily:
+                  "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
               }}
             >
               &#169; 2025 Kai Andreic
@@ -1749,7 +1746,8 @@ const RecognizeAppPage = () => {
               className="text-xs transition-opacity hover:opacity-70 bg-transparent border-none cursor-pointer"
               style={{
                 color: "rgba(253,250,245,0.6)",
-                fontFamily: "'PP Neue Montreal','PPNeueMontreal',sans-serif",
+                fontFamily:
+                  "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
               }}
             >
               Back to top ↑
