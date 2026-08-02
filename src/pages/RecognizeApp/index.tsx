@@ -279,6 +279,8 @@ const VizCarousel = ({
               }}
             >
               <img
+          loading="lazy"
+          decoding="async"
                 src={viz.img}
                 alt={viz.imgAlt}
                 style={{
@@ -464,7 +466,7 @@ const RecognizeAppPage = () => {
         style={{ paddingTop: "70px", height: "clamp(280px,45vw,560px)" }}
       >
         <img
-          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto:best,dpr_3.0,w_3800,c_limit,e_sharpen:120/Recognize_w98sxb.png"
+          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_2000,c_limit/Recognize_w98sxb.png"
           alt="Recognize.app — cover"
           className="w-full h-full object-cover object-center"
         />
@@ -872,6 +874,8 @@ const RecognizeAppPage = () => {
                   }}
                 >
                   <img
+          loading="lazy"
+          decoding="async"
                     src={comp.logo}
                     alt={comp.name}
                     className="w-7 h-7 object-contain"
@@ -1426,6 +1430,8 @@ const RecognizeAppPage = () => {
           </div>
         </div>
         <img
+          loading="lazy"
+          decoding="async"
           src="https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_2200/aoisdhosa_riuxtv.png"
           alt="Recognize.app — finalized data visualization HUD"
           className="w-full object-contain"
@@ -1472,7 +1478,9 @@ const RecognizeAppPage = () => {
               </div>
               <div className="flex items-center gap-3 pt-4 border-t border-black/8 mt-auto">
                 <img
-                  src="https://res.cloudinary.com/dkdwqtlzz/image/upload/image-10de4f4b-1437-44b5-b59e-26482d4dcf3a_yuiw67.webp"
+          loading="lazy"
+          decoding="async"
+                  src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_200,c_limit/image-10de4f4b-1437-44b5-b59e-26482d4dcf3a_yuiw67.webp"
                   alt="Zach Grande"
                   className="w-8 h-8 rounded-full object-cover object-center shrink-0"
                   style={{ border: `1.5px solid ${accentMid}` }}

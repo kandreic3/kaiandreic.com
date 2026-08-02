@@ -292,7 +292,9 @@ export const Hero = () => {
         >
           <div className="absolute box-border h-full pointer-events-none w-full overflow-hidden left-0 top-0">
             <img
-              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/IMG_0335_tbne9p.jpg"
+          loading="lazy"
+          decoding="async"
+              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_2000,c_limit/IMG_0335_tbne9p.jpg"
               alt=""
               className="aspect-[auto_1500_/_716] box-border h-full max-w-full object-cover w-full scale-110"
             />
@@ -460,7 +462,9 @@ const FooterInline = () => {
         <div className="absolute box-border flex h-full justify-center pointer-events-none w-full z-0 left-0 top-0">
           <div className="relative aspect-[124_/_156] box-border min-h-[auto] min-w-[auto]">
             <img
-              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/v1784070460/IMG_0347_zot3zi.jpg"
+          loading="lazy"
+          decoding="async"
+              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_600,c_limit/IMG_0347_zot3zi.jpg"
               alt=""
               className="box-border h-full max-w-full w-full"
               style={{ objectFit: "cover", objectPosition: "center top" }}

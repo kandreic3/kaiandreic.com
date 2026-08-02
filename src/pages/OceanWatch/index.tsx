@@ -23,23 +23,23 @@ const OceanWatchPage = () => {
 
   const wireframes = [
     {
-      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/Low_1_fwouq6.webp",
+      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1000,c_limit/Low_1_fwouq6.webp",
       alt: "Low-fi screen 1",
     },
     {
-      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/Low_2_qvqo41.webp",
+      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1000,c_limit/Low_2_qvqo41.webp",
       alt: "Low-fi screen 2",
     },
     {
-      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/Low_3_z861wv.webp",
+      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1000,c_limit/Low_3_z861wv.webp",
       alt: "Low-fi screen 3",
     },
     {
-      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/Low_4_nxf2lc.webp",
+      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1000,c_limit/Low_4_nxf2lc.webp",
       alt: "Low-fi screen 4",
     },
     {
-      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/Low_5_g1bzu3.webp",
+      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1000,c_limit/Low_5_g1bzu3.webp",
       alt: "Low-fi screen 5",
     },
   ];
@@ -104,7 +104,7 @@ const OceanWatchPage = () => {
         style={{ paddingTop: "70px", height: "clamp(280px,45vw,560px)" }}
       >
         <img
-          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto:best,dpr_3.0,w_3800,c_limit,e_sharpen:120/Ocean_Watch_Thumbnail_as4zjx.png"
+          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_2000,c_limit/Ocean_Watch_Thumbnail_as4zjx.png"
           alt="Ocean Watch — cover"
           className="w-full h-full object-cover object-center"
         />
@@ -721,6 +721,8 @@ const OceanWatchPage = () => {
             }}
           >
             <img
+          loading="lazy"
+          decoding="async"
               src={wireframes[activeWireframe].src}
               alt={wireframes[activeWireframe].alt}
               className="w-full h-auto object-contain transition-opacity duration-200"
@@ -747,6 +749,8 @@ const OceanWatchPage = () => {
                 }}
               >
                 <img
+          loading="lazy"
+          decoding="async"
                   src={img.src}
                   alt={img.alt}
                   className="w-full h-auto object-contain transition-opacity duration-150"
@@ -825,7 +829,9 @@ const OceanWatchPage = () => {
                 }}
               >
                 <img
-                  src="https://res.cloudinary.com/dkdwqtlzz/image/upload/Company_View_jy5kat.webp"
+          loading="lazy"
+          decoding="async"
+                  src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1400,c_limit/Company_View_jy5kat.webp"
                   alt="Classified / Company View — high fidelity screen"
                   className="w-full h-auto object-contain block"
                 />
@@ -947,7 +953,9 @@ const OceanWatchPage = () => {
               }}
             >
               <img
-                src="https://res.cloudinary.com/dkdwqtlzz/image/upload/Company_View_jy5kat.webp"
+          loading="lazy"
+          decoding="async"
+                src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1400,c_limit/Company_View_jy5kat.webp"
                 alt="Classified / Company View — high fidelity screen"
                 className="w-full h-auto object-contain block"
               />
@@ -1010,7 +1018,9 @@ const OceanWatchPage = () => {
                 }}
               >
                 <img
-                  src="https://res.cloudinary.com/dkdwqtlzz/image/upload/General_Public_h4hddj.webp"
+          loading="lazy"
+          decoding="async"
+                  src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1400,c_limit/General_Public_h4hddj.webp"
                   alt="General Public View — high fidelity screen"
                   className="w-full h-auto object-contain block"
                 />
@@ -1127,7 +1137,9 @@ const OceanWatchPage = () => {
               }}
             >
               <img
-                src="https://res.cloudinary.com/dkdwqtlzz/image/upload/General_Public_h4hddj.webp"
+          loading="lazy"
+          decoding="async"
+                src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1400,c_limit/General_Public_h4hddj.webp"
                 alt="General Public View — high fidelity screen"
                 className="w-full h-auto object-contain block"
               />
