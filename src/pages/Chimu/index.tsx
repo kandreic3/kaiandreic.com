@@ -991,8 +991,8 @@ const ChimuPage = () => {
                 fontFeatureSettings: '"liga" 1,"calt" 1,"dlig" 1',
               }}
             >
-              <span>Kai Andreic</span>
-              <span>Product Designer</span>
+              <span className="font-editorial">Kai Andreic</span>
+              <span className="font-editorial">Product Designer</span>
             </div>
           </div>
           <div className="px-5 pb-5 flex justify-between items-center">

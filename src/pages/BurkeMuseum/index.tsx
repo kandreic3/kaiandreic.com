@@ -291,7 +291,7 @@ const BurkeMuseumPage = () => {
                     {card.subtitle}
                   </p>
                 </div>
-                <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-black/8">
+                <div className="grid grid-cols-2 gap-2 mt-auto pt-4 border-t border-black/8 justify-items-start">
                   {card.tags.map((t) => (
                     <span
                       key={t}
@@ -371,7 +371,7 @@ const BurkeMuseumPage = () => {
                 style={{ borderRadius: "4px" }}
               >
                 {item.nameEl}
-                <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-black/8">
+                <div className="grid grid-cols-2 gap-2 mt-auto pt-4 border-t border-black/8 justify-items-start">
                   {item.tags.map((t) => (
                     <span
                       key={t}
@@ -1477,8 +1477,8 @@ const BurkeMuseumPage = () => {
                 fontFeatureSettings: '"liga" 1,"calt" 1,"dlig" 1',
               }}
             >
-              <span>Kai Andreic</span>
-              <span>Product Designer</span>
+              <span className="font-editorial">Kai Andreic</span>
+              <span className="font-editorial">Product Designer</span>
             </div>
           </div>
           <div className="px-5 pb-5 flex justify-between items-center">
