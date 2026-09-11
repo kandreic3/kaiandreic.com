@@ -6,7 +6,7 @@ export const NavbarLogo = ({ onClick }: NavbarLogoProps) => {
       <button
         onClick={onClick}
         aria-label="Kai Andreic"
-        className="block min-h-[auto] min-w-[auto] cursor-pointer bg-transparent border-none p-0"
+        className="block min-h-[auto] min-w-[auto] cursor-pointer bg-transparent border-none px-0 py-[11px] -my-[11px]"
       >
         <span className="leading-[18px] border-b-2 border-solid border-transparent hover:border-black transition-colors duration-200 font-m text-[14px]">
           {" "}

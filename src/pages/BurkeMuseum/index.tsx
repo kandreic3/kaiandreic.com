@@ -417,7 +417,7 @@ const BurkeMuseumPage = () => {
                 >
                   <p
                     className="text-lg leading-none tracking-tight"
-                    style={{ ...serif, color: "#FF3749" }}
+                    style={{ ...serif, color: "#BF2937" }}
                   >
                     {item.stat}
                   </p>
@@ -588,7 +588,7 @@ const BurkeMuseumPage = () => {
             },
             {
               stage: "Return",
-              action: "Reviews &amp; shares sticker book.",
+              action: "Reviews & shares sticker book.",
               feeling: "Proud",
               painPoint: "No share function exists.",
               opportunity: "Screenshot-ready sticker view.",
@@ -625,7 +625,7 @@ const BurkeMuseumPage = () => {
                 <div className="flex-1">
                   <p
                     className="text-[9px] font-m uppercase tracking-widest mb-0.5"
-                    style={{ color: "#b0a89e" }}
+                    style={{ color: "#7a6e63" }}
                   >
                     Feel
                   </p>
@@ -639,7 +639,7 @@ const BurkeMuseumPage = () => {
                 <div className="flex-1">
                   <p
                     className="text-[9px] font-m uppercase tracking-widest mb-0.5"
-                    style={{ color: "#b0a89e" }}
+                    style={{ color: "#7a6e63" }}
                   >
                     Friction
                   </p>
@@ -1350,13 +1350,13 @@ const BurkeMuseumPage = () => {
               <div>
                 <p
                   className="text-[9px] font-m uppercase tracking-widest mb-0.5"
-                  style={{ color: "rgba(253,250,245,0.35)" }}
+                  style={{ color: "rgba(253,250,245,0.6)" }}
                 >
                   Homepage
                 </p>
                 <p
                   className="text-[9px] font-m uppercase tracking-widest"
-                  style={{ color: "rgba(253,250,245,0.18)" }}
+                  style={{ color: "rgba(253,250,245,0.5)" }}
                 >
                   Return to index
                 </p>
@@ -1388,13 +1388,13 @@ const BurkeMuseumPage = () => {
               <div>
                 <p
                   className="text-[10px] font-m uppercase tracking-widest mb-1"
-                  style={{ color: "rgba(253,250,245,0.35)" }}
+                  style={{ color: "rgba(253,250,245,0.6)" }}
                 >
                   Next Project
                 </p>
                 <p
                   className="text-[10px] font-m uppercase tracking-widest"
-                  style={{ color: "rgba(253,250,245,0.20)" }}
+                  style={{ color: "rgba(253,250,245,0.5)" }}
                 >
                   UX · Mobile App
                 </p>
@@ -1415,7 +1415,7 @@ const BurkeMuseumPage = () => {
               <p
                 className="text-[10px] uppercase tracking-widest"
                 style={{
-                  color: "rgba(253,250,245,0.45)",
+                  color: "#fdfaf5",
                   fontFamily:
                     "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                 }}
@@ -1439,7 +1439,7 @@ const BurkeMuseumPage = () => {
               <p
                 className="text-[10px] uppercase tracking-widest"
                 style={{
-                  color: "rgba(253,250,245,0.45)",
+                  color: "#fdfaf5",
                   fontFamily:
                     "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                 }}
@@ -1485,7 +1485,7 @@ const BurkeMuseumPage = () => {
             <span
               className="text-xs"
               style={{
-                color: "rgba(253,250,245,0.45)",
+                color: "#fdfaf5",
                 fontFamily:
                   "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
               }}
@@ -1496,7 +1496,7 @@ const BurkeMuseumPage = () => {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="text-xs transition-opacity hover:opacity-70 bg-transparent border-none cursor-pointer"
               style={{
-                color: "rgba(253,250,245,0.6)",
+                color: "#fdfaf5",
                 fontFamily:
                   "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
               }}

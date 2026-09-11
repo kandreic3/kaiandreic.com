@@ -253,11 +253,13 @@ const VizCarousel = ({
                   <div
                     key={j}
                     style={{
-                      width: j === i ? "20px" : "6px",
+                      width: "20px",
                       height: "3px",
                       borderRadius: "2px",
                       backgroundColor: j === i ? accent : "rgba(0,0,0,0.15)",
-                      transition: "width 0.4s ease, background-color 0.4s ease",
+                      transform: `scaleX(${j === i ? 1 : 0.3})`,
+                      transformOrigin: "left",
+                      transition: "transform 0.4s ease, background-color 0.4s ease",
                     }}
                   />
                 ))}
@@ -571,7 +573,7 @@ const RecognizeAppPage = () => {
             </p>
             <p className="text-sm font-m leading-relaxed opacity-70">
               Build a HUD that puts qualitative insight over raw counts, aligns
-              with Recognize&#39;s design system, and stays simple enough to use
+              with Recognize's design system, and stays simple enough to use
               in under a minute.
             </p>
           </div>
@@ -704,12 +706,12 @@ const RecognizeAppPage = () => {
               <div>
                 <p
                   className="text-[9px] font-m uppercase tracking-widest mb-2 opacity-50"
-                  style={{ color: "#b0a89e" }}
+                  style={{ color: "#7a6e63" }}
                 >
                   Frustration
                 </p>
                 <p className="text-[11px] font-m opacity-60 leading-relaxed">
-                  Can&#39;t identify team dynamics or performance issues early
+                  Can't identify team dynamics or performance issues early
                   without data
                 </p>
               </div>
@@ -743,13 +745,13 @@ const RecognizeAppPage = () => {
                 </p>
                 <p className="text-[11px] font-m opacity-60 leading-relaxed">
                   Concise data HUD that surfaces the <em>why</em> behind her
-                  team&#39;s recognitions
+                  team's recognitions
                 </p>
               </div>
               <div>
                 <p
                   className="text-[9px] font-m uppercase tracking-widest mb-2 opacity-50"
-                  style={{ color: "#b0a89e" }}
+                  style={{ color: "#7a6e63" }}
                 >
                   Frustration
                 </p>
@@ -791,8 +793,8 @@ const RecognizeAppPage = () => {
               >
                 25,000+
               </span>{" "}
-              companies use HCM software to address it. Recognition isn&#39;t
-              decoration — it&#39;s infrastructure.
+              companies use HCM software to address it. Recognition isn't
+              decoration — it's infrastructure.
             </p>
             <p className="text-[13px] font-m leading-relaxed opacity-65">
               We built every visualization around a single composite wellbeing
@@ -807,7 +809,7 @@ const RecognizeAppPage = () => {
                 name: "Workday",
                 logo: "https://logo.clearbit.com/workday.com",
                 type: "Enterprise HCM",
-                desc: "Recognition is a bolt-on — peer feedback and gift card rewards sit outside Workday&#39;s core value prop.",
+                desc: "Recognition is a bolt-on — peer feedback and gift card rewards sit outside Workday's core value prop.",
                 tags: ["Peer feedback", "Gift cards", "Dashboards"],
                 strength: "Scale & deep integration",
                 weakness: "Recognition is an afterthought",
@@ -999,7 +1001,7 @@ const RecognizeAppPage = () => {
                 {
                   num: "01",
                   title: "Qualitative over quantitative",
-                  body: "Leaderboards and tallies miss the meaning behind a recognition. That gap is Recognize&#39;s opening.",
+                  body: "Leaderboards and tallies miss the meaning behind a recognition. That gap is Recognize's opening.",
                 },
                 {
                   num: "02",
@@ -1134,7 +1136,7 @@ const RecognizeAppPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-[1fr_260px] gap-10">
             <div>
               <p className="text-sm font-m leading-relaxed opacity-70 mb-6">
-                No primary typeface existed beyond the logo&#39;s{" "}
+                No primary typeface existed beyond the logo's{" "}
                 <span style={{ fontFamily: "'Lato', sans-serif" }}>Lato</span>.
                 I proposed{" "}
                 <span style={{ fontFamily: "'Outfit', sans-serif" }}>
@@ -1269,7 +1271,7 @@ const RecognizeAppPage = () => {
               {
                 label: "Sentiment Chart",
                 feedback:
-                  "No unit values — I didn&#39;t understand what it was at first. I wanted to know how many recognitions are in each category.",
+                  "No unit values — I didn't understand what it was at first. I wanted to know how many recognitions are in each category.",
               },
               {
                 label: "Summary Length",
@@ -1278,7 +1280,7 @@ const RecognizeAppPage = () => {
               {
                 label: "Department Breakdown",
                 feedback:
-                  "I&#39;d love to see which teams recognitions are coming from — not just peer and manager.",
+                  "I'd love to see which teams recognitions are coming from — not just peer and manager.",
               },
             ].map((item) => (
               <div
@@ -1363,7 +1365,7 @@ const RecognizeAppPage = () => {
             {
               num: "04",
               tag: "Standard",
-              tagBg: "#f0ece6",
+              tagBg: "#f8f5f0",
               tagColor: "#7a6e63",
               title: "Recognitions Received",
               desc: "Recognition origin by department — see whether appreciation stays within the team or spans cross-functional partners.",
@@ -1374,7 +1376,7 @@ const RecognizeAppPage = () => {
             {
               num: "05",
               tag: "Standard",
-              tagBg: "#f0ece6",
+              tagBg: "#f8f5f0",
               tagColor: "#7a6e63",
               title: "Recognitions Over Time",
               desc: "Line chart per award type — Collaboration, Innovation, Leadership. Reveals patterns, spikes, and drops across any time window.",
@@ -1425,17 +1427,21 @@ const RecognizeAppPage = () => {
               Final Deliverable
             </p>
             <p className="text-xs font-m" style={{ color: "#7a6e63" }}>
-              Handed off to Recognize&#39;s engineering team
+              Handed off to Recognize's engineering team
             </p>
           </div>
         </div>
         <img
           loading="lazy"
           decoding="async"
-          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/q_auto,f_auto,w_2200/aoisdhosa_riuxtv.png"
+          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1600,c_limit/aoisdhosa_riuxtv.png"
           alt="Recognize.app — finalized data visualization HUD"
-          className="w-full object-contain"
-          style={{ borderRadius: "8px", backgroundColor: accentMuted }}
+          className="block w-auto max-w-full mx-auto object-contain"
+          style={{
+            borderRadius: "8px",
+            backgroundColor: accentMuted,
+            maxHeight: "55vh",
+          }}
         />
       </div>
 
@@ -1457,7 +1463,7 @@ const RecognizeAppPage = () => {
               style={{ borderRadius: "4px" }}
             >
               <p className="text-[10px] font-m uppercase tracking-widest opacity-40">
-                Sponsor&#39;s Appraisal
+                Sponsor's Appraisal
               </p>
               <div
                 className="border-l-2 pl-5 py-1"
@@ -1470,9 +1476,9 @@ const RecognizeAppPage = () => {
                   on CEO feedback.
                 </p>
                 <p className="text-[12px] font-m leading-relaxed opacity-70">
-                  My team was thrilled with the final designs. It wouldn&#39;t
+                  My team was thrilled with the final designs. It wouldn't
                   have been possible without Kai — his initiative and attitude
-                  were a constant asset. I&#39;m confident he&#39;ll be an asset
+                  were a constant asset. I'm confident he'll be an asset
                   wherever he goes next.&#8221;
                 </p>
               </div>
@@ -1562,7 +1568,7 @@ const RecognizeAppPage = () => {
               A real-life look at cross-functional product work.
             </p>
             <p className="text-sm font-m leading-relaxed opacity-60 mb-4">
-              I worked directly with Recognize&#39;s CFO Alex Grande and CTO
+              I worked directly with Recognize's CFO Alex Grande and CTO
               Peter Phillips — aligning designs with their expectations while
               keeping scope achievable for my dev team. Heavy documentation made
               handoff frictionless.
@@ -1608,13 +1614,13 @@ const RecognizeAppPage = () => {
               <div>
                 <p
                   className="text-[9px] font-m uppercase tracking-widest mb-0.5"
-                  style={{ color: "rgba(253,250,245,0.35)" }}
+                  style={{ color: "rgba(253,250,245,0.6)" }}
                 >
                   Homepage
                 </p>
                 <p
                   className="text-[9px] font-m uppercase tracking-widest"
-                  style={{ color: "rgba(253,250,245,0.18)" }}
+                  style={{ color: "rgba(253,250,245,0.5)" }}
                 >
                   Return to index
                 </p>
@@ -1645,13 +1651,13 @@ const RecognizeAppPage = () => {
               <div>
                 <p
                   className="text-[10px] font-m uppercase tracking-widest mb-1"
-                  style={{ color: "rgba(253,250,245,0.35)" }}
+                  style={{ color: "rgba(253,250,245,0.6)" }}
                 >
                   Next Project
                 </p>
                 <p
                   className="text-[10px] font-m uppercase tracking-widest"
-                  style={{ color: "rgba(253,250,245,0.20)" }}
+                  style={{ color: "rgba(253,250,245,0.5)" }}
                 >
                   UX · Museum Redesign
                 </p>
@@ -1672,7 +1678,7 @@ const RecognizeAppPage = () => {
               <p
                 className="text-[10px] uppercase tracking-widest"
                 style={{
-                  color: "rgba(253,250,245,0.45)",
+                  color: "#fdfaf5",
                   fontFamily:
                     "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                 }}
@@ -1696,7 +1702,7 @@ const RecognizeAppPage = () => {
               <p
                 className="text-[10px] uppercase tracking-widest"
                 style={{
-                  color: "rgba(253,250,245,0.45)",
+                  color: "#fdfaf5",
                   fontFamily:
                     "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                 }}
@@ -1742,7 +1748,7 @@ const RecognizeAppPage = () => {
             <span
               className="text-xs"
               style={{
-                color: "rgba(253,250,245,0.45)",
+                color: "#fdfaf5",
                 fontFamily:
                   "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
               }}
@@ -1753,7 +1759,7 @@ const RecognizeAppPage = () => {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="text-xs transition-opacity hover:opacity-70 bg-transparent border-none cursor-pointer"
               style={{
-                color: "rgba(253,250,245,0.6)",
+                color: "#fdfaf5",
                 fontFamily:
                   "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
               }}

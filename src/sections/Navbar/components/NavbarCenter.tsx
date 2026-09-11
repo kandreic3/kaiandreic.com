@@ -13,15 +13,14 @@ export const NavbarCenter = ({ onClick }: NavbarCenterProps) => {
             onClick();
           }
         }}
-        aria-label="Youngjoon in Korean"
-        className="text-[28px] md:text-[34px] leading-[0.9] tracking-[-0.02em] cursor-pointer select-none rounded-md px-2 py-1 transition-all duration-200 hover:bg-black/[0.07] hover:scale-[1.06] active:scale-[0.96] active:bg-black/[0.12]"
+        aria-label="Youngjoon — Kai's Korean name"
+        title="영준 — Kai's Korean name"
+        className="text-[28px] md:text-[34px] leading-[0.9] tracking-[-0.02em] cursor-pointer select-none px-2 py-1 transition-opacity duration-200 hover:opacity-60"
         style={{
           fontFamily:
             "'Jalnan2', 'PP Neue Montreal', 'PPNouveauMontreal', sans-serif",
           fontWeight: 800,
-          color: "#111111",
-          textShadow:
-            "0 1px 0 rgba(255,255,255,0.35), 0 2px 6px rgba(0,0,0,0.08)",
+          color: "#1a1714",
         }}
       >
         영준

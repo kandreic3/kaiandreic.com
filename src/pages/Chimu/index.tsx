@@ -865,13 +865,13 @@ const ChimuPage = () => {
               <div>
                 <p
                   className="text-[9px] font-m uppercase tracking-widest mb-0.5"
-                  style={{ color: "rgba(253,250,245,0.35)" }}
+                  style={{ color: "rgba(253,250,245,0.6)" }}
                 >
                   Homepage
                 </p>
                 <p
                   className="text-[9px] font-m uppercase tracking-widest"
-                  style={{ color: "rgba(253,250,245,0.18)" }}
+                  style={{ color: "rgba(253,250,245,0.5)" }}
                 >
                   Return to index
                 </p>
@@ -902,13 +902,13 @@ const ChimuPage = () => {
               <div>
                 <p
                   className="text-[10px] font-m uppercase tracking-widest mb-1"
-                  style={{ color: "rgba(253,250,245,0.35)" }}
+                  style={{ color: "rgba(253,250,245,0.6)" }}
                 >
                   Next Project
                 </p>
                 <p
                   className="text-[10px] font-m uppercase tracking-widest"
-                  style={{ color: "rgba(253,250,245,0.20)" }}
+                  style={{ color: "rgba(253,250,245,0.5)" }}
                 >
                   Mobile · Ocean Health
                 </p>
@@ -929,7 +929,7 @@ const ChimuPage = () => {
               <p
                 className="text-[10px] uppercase tracking-widest"
                 style={{
-                  color: "rgba(253,250,245,0.45)",
+                  color: "#fdfaf5",
                   fontFamily:
                     "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                 }}
@@ -953,7 +953,7 @@ const ChimuPage = () => {
               <p
                 className="text-[10px] uppercase tracking-widest"
                 style={{
-                  color: "rgba(253,250,245,0.45)",
+                  color: "#fdfaf5",
                   fontFamily:
                     "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                 }}
@@ -999,7 +999,7 @@ const ChimuPage = () => {
             <span
               className="text-xs"
               style={{
-                color: "rgba(253,250,245,0.45)",
+                color: "#fdfaf5",
                 fontFamily:
                   "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
               }}
@@ -1010,7 +1010,7 @@ const ChimuPage = () => {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="text-xs transition-opacity hover:opacity-70 bg-transparent border-none cursor-pointer"
               style={{
-                color: "rgba(253,250,245,0.6)",
+                color: "#fdfaf5",
                 fontFamily:
                   "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
               }}

@@ -6,6 +6,7 @@ import { NavbarCenter } from "@/sections/Navbar/components/NavbarCenter";
 const NAV_LINKS = [
   { label: "Index", href: "#top" },
   { label: "Projects", href: "#projects" },
+  { label: "About", href: "/about" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -25,6 +26,10 @@ export const Navbar = () => {
 
   const handleNavClick = (href: string) => {
     setMenuOpen(false);
+    if (href.startsWith("/")) {
+      navigate(href);
+      return;
+    }
     if (href === "#top") {
       if (!isHome) {
         navigate("/");
@@ -61,7 +66,7 @@ export const Navbar = () => {
               <button
                 key={link.label}
                 onClick={() => handleNavClick(link.href)}
-                className="text-sm font-m border-b-2 border-transparent hover:border-black transition-colors duration-200 leading-[16.8px] cursor-pointer bg-transparent"
+                className="text-sm font-m border-b-2 border-transparent hover:border-black transition-colors duration-200 leading-[16.8px] cursor-pointer bg-transparent py-[11px] -my-[11px]"
               >
                 {link.label}
               </button>

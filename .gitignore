@@ -17,6 +17,10 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+
+# Claude Code / Impeccable skill local tool state (not project source)
+.claude/
+.impeccable/
 *.suo
 *.ntvs*
 *.njsproj

@@ -23,23 +23,23 @@ const OceanWatchPage = () => {
 
   const wireframes = [
     {
-      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1000,c_limit/Low_1_fwouq6.webp",
+      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1500,c_limit/Low_1_fwouq6.webp",
       alt: "Low-fi screen 1",
     },
     {
-      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1000,c_limit/Low_2_qvqo41.webp",
+      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1500,c_limit/Low_2_qvqo41.webp",
       alt: "Low-fi screen 2",
     },
     {
-      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1000,c_limit/Low_3_z861wv.webp",
+      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1500,c_limit/Low_3_z861wv.webp",
       alt: "Low-fi screen 3",
     },
     {
-      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1000,c_limit/Low_4_nxf2lc.webp",
+      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1500,c_limit/Low_4_nxf2lc.webp",
       alt: "Low-fi screen 4",
     },
     {
-      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1000,c_limit/Low_5_g1bzu3.webp",
+      src: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_1500,c_limit/Low_5_g1bzu3.webp",
       alt: "Low-fi screen 5",
     },
   ];
@@ -332,7 +332,7 @@ const OceanWatchPage = () => {
               id: "P02",
               name: "Alex Chen",
               role: "Fisheries Enforcement Officer · Age 45",
-              color: accentMid,
+              color: accent,
               bg: "#E8F4F8",
               needs: [
                 "Unified vessel tracking + cross-agency data",
@@ -711,9 +711,11 @@ const OceanWatchPage = () => {
             wireframes — giving us a tangible visualization of key elements
             before committing to high-fidelity design.
           </p>
-          {/* Featured / active wireframe */}
+          {/* Featured / active wireframe — capped narrower than its native
+              1000px source so it renders crisp on high-DPI screens instead
+              of stretched and soft, while staying the clear focal point */}
           <div
-            className="w-full mb-4 overflow-hidden"
+            className="w-full max-w-[720px] mx-auto mb-4 overflow-hidden p-4"
             style={{
               borderRadius: "6px",
               background: "rgba(0,0,0,0.02)",
@@ -730,7 +732,7 @@ const OceanWatchPage = () => {
             />
           </div>
           {/* Thumbnail strip — same 3/5-col grid layout */}
-          <div className="grid grid-cols-3 md:grid-cols-5 gap-2">
+          <div className="grid grid-cols-3 md:grid-cols-5 gap-2 max-w-[720px] mx-auto">
             {wireframes.map((img, i) => (
               <button
                 key={img.src}
@@ -861,7 +863,6 @@ const OceanWatchPage = () => {
                         background: "#ffffff",
                         borderRadius: "6px",
                         border: "1px solid rgba(0,0,0,0.10)",
-                        borderLeft: `3px solid ${accent}`,
                         boxShadow: "0 2px 12px rgba(0,0,0,0.18)",
                       }}
                     >
@@ -914,7 +915,6 @@ const OceanWatchPage = () => {
                         background: "#ffffff",
                         borderRadius: "6px",
                         border: "1px solid rgba(0,0,0,0.10)",
-                        borderLeft: `3px solid ${accent}`,
                         boxShadow: "0 2px 12px rgba(0,0,0,0.18)",
                       }}
                     >
@@ -1045,7 +1045,6 @@ const OceanWatchPage = () => {
                         background: "#ffffff",
                         borderRadius: "6px",
                         border: "1px solid rgba(0,0,0,0.10)",
-                        borderLeft: `3px solid ${accent}`,
                         boxShadow: "0 2px 12px rgba(0,0,0,0.18)",
                       }}
                     >
@@ -1098,7 +1097,6 @@ const OceanWatchPage = () => {
                         background: "#ffffff",
                         borderRadius: "6px",
                         border: "1px solid rgba(0,0,0,0.10)",
-                        borderLeft: `3px solid ${accent}`,
                         boxShadow: "0 2px 12px rgba(0,0,0,0.18)",
                       }}
                     >
@@ -1320,13 +1318,13 @@ const OceanWatchPage = () => {
               <div>
                 <p
                   className="text-[9px] font-m uppercase tracking-widest mb-0.5"
-                  style={{ color: "rgba(253,250,245,0.35)" }}
+                  style={{ color: "rgba(253,250,245,0.6)" }}
                 >
                   Homepage
                 </p>
                 <p
                   className="text-[9px] font-m uppercase tracking-widest"
-                  style={{ color: "rgba(253,250,245,0.18)" }}
+                  style={{ color: "rgba(253,250,245,0.5)" }}
                 >
                   Return to index
                 </p>
@@ -1357,13 +1355,13 @@ const OceanWatchPage = () => {
               <div>
                 <p
                   className="text-[10px] font-m uppercase tracking-widest mb-1"
-                  style={{ color: "rgba(253,250,245,0.35)" }}
+                  style={{ color: "rgba(253,250,245,0.6)" }}
                 >
                   Next Project
                 </p>
                 <p
                   className="text-[10px] font-m uppercase tracking-widest"
-                  style={{ color: "rgba(253,250,245,0.20)" }}
+                  style={{ color: "rgba(253,250,245,0.5)" }}
                 >
                   Data Viz · Recognition Platform
                 </p>
@@ -1384,7 +1382,7 @@ const OceanWatchPage = () => {
               <p
                 className="text-[10px] uppercase tracking-widest"
                 style={{
-                  color: "rgba(253,250,245,0.45)",
+                  color: "#fdfaf5",
                   fontFamily:
                     "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                 }}
@@ -1408,7 +1406,7 @@ const OceanWatchPage = () => {
               <p
                 className="text-[10px] uppercase tracking-widest"
                 style={{
-                  color: "rgba(253,250,245,0.45)",
+                  color: "#fdfaf5",
                   fontFamily:
                     "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
                 }}
@@ -1454,7 +1452,7 @@ const OceanWatchPage = () => {
             <span
               className="text-xs"
               style={{
-                color: "rgba(253,250,245,0.45)",
+                color: "#fdfaf5",
                 fontFamily:
                   "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
               }}
@@ -1465,7 +1463,7 @@ const OceanWatchPage = () => {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="text-xs transition-opacity hover:opacity-70 bg-transparent border-none cursor-pointer"
               style={{
-                color: "rgba(253,250,245,0.6)",
+                color: "#fdfaf5",
                 fontFamily:
                   "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
               }}

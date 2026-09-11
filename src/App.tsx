@@ -7,6 +7,8 @@ const BurkeMuseumPage = lazy(() => import("./pages/BurkeMuseum"));
 const RecognizeAppPage = lazy(() => import("./pages/RecognizeApp"));
 const OceanWatchPage = lazy(() => import("./pages/OceanWatch"));
 const ChimuPage = lazy(() => import("./pages/Chimu"));
+const AboutPage = lazy(() => import("./pages/About"));
+const EAGlobalPage = lazy(() => import("./pages/EAGlobal"));
 const StudentWorkflow = lazy(() => import("./screens/StudentWorkflow"));
 
 const HomePage = () => {
@@ -67,6 +69,7 @@ const HomePage = () => {
       style={{ backgroundColor: "#fdfaf5" }}
     >
       <Navbar />
+      <h1 className="sr-only">Kai Andreic — Product Designer</h1>
       <main className="box-border">
         <Hero />
       </main>
@@ -130,7 +133,7 @@ const RouteLoader = () => {
           fontFamily: "'PP Neue Montreal', 'PPNouveauMontreal', sans-serif",
           fontSize: "12px",
           letterSpacing: "0.08em",
-          color: "#777",
+          color: "#7a6e63",
         }}
       >
         Loading
@@ -187,6 +190,8 @@ export const App = () => {
           <Route path="/recognize" element={<RecognizeAppPage />} />
           <Route path="/oceanwatch" element={<OceanWatchPage />} />
           <Route path="/chimu" element={<ChimuPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/eaglobal" element={<EAGlobalPage />} />
           <Route path="/studentworkflow" element={<StudentWorkflow />} />
           <Route path="*" element={<HomePage />} />
         </Routes>

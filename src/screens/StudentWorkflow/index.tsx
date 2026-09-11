@@ -1,11 +1,38 @@
+import { useEffect, useState } from "react";
 import { Button } from "./components/Button";
 import { FormCheckbox } from "./components/FormCheckbox";
 import { FormInput } from "./components/FormInput";
 import { FormSelect } from "./components/FormSelect";
 
+// The canvas element declares a 15000x6500px min-size (leftover from its Figma
+// export), but the actual laid-out screens only occupy roughly this region —
+// scale against the real content bounds so it isn't rendered microscopic.
+const CANVAS_WIDTH = 5100;
+const CANVAS_HEIGHT = 1350;
+
 export const StudentWorkflow = (): JSX.Element => {
+  const [scale, setScale] = useState(1);
+
+  useEffect(() => {
+    const updateScale = () => {
+      setScale(Math.min(1, window.innerWidth / CANVAS_WIDTH));
+    };
+    updateScale();
+    window.addEventListener("resize", updateScale);
+    return () => window.removeEventListener("resize", updateScale);
+  }, []);
+
   return (
-    <div className="bg-[#444444] border border-solid border-[#ffffff1a] w-full min-w-[15000px] min-h-[6500px] relative">
+    <div
+      style={{ width: "100%", height: CANVAS_HEIGHT * scale, overflow: "hidden" }}
+    >
+    <div
+      style={{
+        transform: `scale(${scale})`,
+        transformOrigin: "top left",
+      }}
+      className="bg-[#444444] border border-solid border-[#ffffff1a] w-full min-w-[15000px] min-h-[6500px] relative"
+    >
       <div className="flex flex-col w-[1280px] h-[832px] items-center gap-6 pt-[100px] pb-[113px] px-[389px] absolute top-[454px] left-[653px] bg-[#d9d9d9]">
         <div className="relative w-fit mt-[-1.00px] font-h1 font-[number:var(--h1-font-weight)] text-[#1e1e1e] text-[length:var(--h1-font-size)] text-center tracking-[var(--h1-letter-spacing)] leading-[var(--h1-line-height)] whitespace-nowrap [font-style:var(--h1-font-style)]">
           Welcome to Chīmu
@@ -106,6 +133,7 @@ export const StudentWorkflow = (): JSX.Element => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
