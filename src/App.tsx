@@ -89,55 +89,43 @@ const RouteLoader = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        gap: "16px",
+        overflow: "hidden",
       }}
     >
-      <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
-        <span
-          style={{
-            width: "8px",
-            height: "8px",
-            borderRadius: "999px",
-            background: "#1a1a1a",
-            animation: "loaderDot 1.2s ease-in-out infinite",
-            animationDelay: "0s",
-            display: "block",
-          }}
-        />
-        <span
-          style={{
-            width: "8px",
-            height: "8px",
-            borderRadius: "999px",
-            background: "#1a1a1a",
-            animation: "loaderDot 1.2s ease-in-out infinite",
-            animationDelay: "0.2s",
-            display: "block",
-          }}
-        />
-        <span
-          style={{
-            width: "8px",
-            height: "8px",
-            borderRadius: "999px",
-            background: "#1a1a1a",
-            animation: "loaderDot 1.2s ease-in-out infinite",
-            animationDelay: "0.4s",
-            display: "block",
-          }}
-        />
-      </div>
-      <p
+      {/* Same line-reveal entrance as the homepage hero, so route
+          transitions feel consistent with the site's own opening moment */}
+      <div
         style={{
-          margin: 0,
-          fontFamily: "'PP Neue Montreal', 'PPNouveauMontreal', sans-serif",
-          fontSize: "12px",
-          letterSpacing: "0.08em",
-          color: "#7a6e63",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          lineHeight: 1,
         }}
       >
-        Loading
-      </p>
+        <div
+          className="line-reveal-1 hero-editorial"
+          style={{
+            fontSize: "clamp(44px, 11vw, 100px)",
+            letterSpacing: "-0.04em",
+            color: "#1a1a1a",
+            lineHeight: 1,
+            paddingBottom: "0.18em",
+          }}
+        >
+          Product
+        </div>
+        <div
+          className="line-reveal-2 hero-editorial"
+          style={{
+            fontSize: "clamp(44px, 11vw, 100px)",
+            letterSpacing: "-0.04em",
+            color: "#1a1a1a",
+            lineHeight: 1,
+          }}
+        >
+          Designer
+        </div>
+      </div>
     </div>
   );
 };

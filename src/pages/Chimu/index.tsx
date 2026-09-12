@@ -819,7 +819,7 @@ const ChimuPage = () => {
             >
               R E F L E C T I O N
             </p>
-            <p className="text-sm font-m opacity-80 mt-1">What I Learned</p>
+            <p className="text-sm font-m opacity-80 mt-1">Takeaways</p>
           </div>
           <div className="max-w-[620px] pb-20">
             <p
