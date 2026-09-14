@@ -127,7 +127,7 @@ export const Footer = () => {
       </div>
 
       {/* Brand */}
-      <div className="relative box-border overflow-hidden my-28 px-5">
+      <div className="relative box-border overflow-hidden my-28 px-5 col-start-[span_12] col-end-[span_12] w-full">
         <div className="relative text-[47.5px] box-border flex flex-wrap justify-between tracking-[-2.375px] leading-[47.5px] z-[1] py-12 font-b md:text-[65.6px] md:tracking-[-3.28px] md:leading-[65.6px]">
           <div
             className="text-[47.5px] box-border tracking-[-2.375px] leading-[47.5px] min-h-[auto] min-w-[auto] mr-2 md:text-[65.6px] md:tracking-[-3.28px] md:leading-[65.6px]"
