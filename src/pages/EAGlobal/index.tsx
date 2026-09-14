@@ -37,7 +37,7 @@ const STAGES: Stage[] = [
     index: "01",
     label: "First",
     caption: "Where it started.",
-    img: "/images/eaglobal-first.png",
+    img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_2000,c_limit/eaglobal-first_ldi8kx.png",
     objectPosition: "top",
     // Native ratio, kept wider than the shared 16:9 frame so cover-cropping
     // only ever trims the bottom — never the sides.
@@ -47,14 +47,14 @@ const STAGES: Stage[] = [
     index: "02",
     label: "Second",
     caption: "An iteration along the way.",
-    img: "/images/eaglobal-second.png",
+    img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_2000,c_limit/eaglobal-second_g3ctkh.png",
     objectPosition: "top",
   },
   {
     index: "03",
     label: "Current",
     caption: "Where it stands today.",
-    img: "/images/eaglobal-current.png",
+    img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_2000,c_limit/eaglobal-current_losuex.png",
     objectPosition: "top",
   },
 ];
@@ -172,7 +172,7 @@ export default function EAGlobal() {
           <img
             loading="eager"
             decoding="async"
-            src="/images/eaglobal-cover.png"
+            src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_2000,c_limit/eaglobal-cover_u14djn.png"
             alt="EA.global"
             className="w-full h-full object-cover object-center"
             style={{ backgroundColor: "#122f08" }}

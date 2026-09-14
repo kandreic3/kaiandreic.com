@@ -50,7 +50,7 @@ export const Hero = () => {
               {[
                 {
                   label: "1 / 5",
-                  img: "/images/eaglobal-cover.png",
+                  img: "https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto,w_900,c_limit/eaglobal-cover_u14djn.png",
                   href: "/eaglobal",
                   text: "EA.global",
                   tier: "Professional",

@@ -1063,7 +1063,7 @@ const BurkeMuseumPage = () => {
             <img
           loading="lazy"
           decoding="async"
-              src="/images/burkemuseum-1.png"
+              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto/burkemuseum-1_dj1t5z.png"
               alt=""
               aria-hidden="true"
               className="absolute pointer-events-none select-none"
@@ -1079,7 +1079,7 @@ const BurkeMuseumPage = () => {
             <img
           loading="lazy"
           decoding="async"
-              src="/images/burkemuseum-2.png"
+              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto/burkemuseum-2_e1xpxn.png"
               alt=""
               aria-hidden="true"
               className="absolute pointer-events-none select-none"
@@ -1095,7 +1095,7 @@ const BurkeMuseumPage = () => {
             <img
           loading="lazy"
           decoding="async"
-              src="/images/burkemuseum-3.png"
+              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto/burkemuseum-3_qofcfa.png"
               alt=""
               aria-hidden="true"
               className="absolute pointer-events-none select-none"
@@ -1175,7 +1175,7 @@ const BurkeMuseumPage = () => {
             <img
           loading="lazy"
           decoding="async"
-              src="/images/burkemuseum-1.png"
+              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto/burkemuseum-1_dj1t5z.png"
               alt=""
               aria-hidden="true"
               className="absolute pointer-events-none select-none"
@@ -1191,7 +1191,7 @@ const BurkeMuseumPage = () => {
             <img
           loading="lazy"
           decoding="async"
-              src="/images/burkemuseum-2.png"
+              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto/burkemuseum-2_e1xpxn.png"
               alt=""
               aria-hidden="true"
               className="absolute pointer-events-none select-none"
@@ -1207,7 +1207,7 @@ const BurkeMuseumPage = () => {
             <img
           loading="lazy"
           decoding="async"
-              src="/images/burkemuseum-3.png"
+              src="https://res.cloudinary.com/dkdwqtlzz/image/upload/f_auto,q_auto/burkemuseum-3_qofcfa.png"
               alt=""
               aria-hidden="true"
               className="absolute pointer-events-none select-none"

@@ -22,7 +22,7 @@ export const FormSelect = ({
         <img
           className={`relative w-[18.19px] h-[15.75px] ${dropdownClassName}`}
           alt="Dropdown"
-          src="/images/dropdown-icon.svg"
+          src="https://res.cloudinary.com/dkdwqtlzz/image/upload/dropdown-icon_qsu73r.svg"
         />
       </div>
     </div>
