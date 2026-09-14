@@ -188,7 +188,7 @@ export const Hero = () => {
         <div
           id="contact"
           ref={contactRef}
-          className="section-blur-wrapper relative aspect-auto box-border flex flex-col justify-between mb-[-150px] min-h-[auto] min-w-[auto] w-full overflow-hidden px-5 py-[60px] md:aspect-[1500_/_600]"
+          className="section-blur-wrapper relative aspect-[1500_/_716] box-border flex flex-col justify-between mb-[-150px] min-h-[auto] min-w-[auto] w-full overflow-hidden px-5 py-[60px]"
         >
           <div className="absolute box-border h-full pointer-events-none w-full overflow-hidden left-0 top-0">
             <img
