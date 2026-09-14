@@ -22,7 +22,7 @@ export const FormSelect = ({
         <img
           className={`relative w-[18.19px] h-[15.75px] ${dropdownClassName}`}
           alt="Dropdown"
-          src="https://c.animaapp.com/mpln3dcglqoyJS/img/dropdown.svg"
+          src="/images/dropdown-icon.svg"
         />
       </div>
     </div>

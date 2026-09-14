@@ -1063,7 +1063,7 @@ const BurkeMuseumPage = () => {
             <img
           loading="lazy"
           decoding="async"
-              src="https://c.animaapp.com/mnnib5ym6YgLgh/img/uploaded-asset-1779843092193-0.png"
+              src="/images/burkemuseum-1.png"
               alt=""
               aria-hidden="true"
               className="absolute pointer-events-none select-none"
@@ -1079,7 +1079,7 @@ const BurkeMuseumPage = () => {
             <img
           loading="lazy"
           decoding="async"
-              src="https://c.animaapp.com/mnnib5ym6YgLgh/img/uploaded-asset-1779843092194-1.png"
+              src="/images/burkemuseum-2.png"
               alt=""
               aria-hidden="true"
               className="absolute pointer-events-none select-none"
@@ -1095,7 +1095,7 @@ const BurkeMuseumPage = () => {
             <img
           loading="lazy"
           decoding="async"
-              src="https://c.animaapp.com/mnnib5ym6YgLgh/img/uploaded-asset-1779843092199-2.png"
+              src="/images/burkemuseum-3.png"
               alt=""
               aria-hidden="true"
               className="absolute pointer-events-none select-none"
@@ -1175,7 +1175,7 @@ const BurkeMuseumPage = () => {
             <img
           loading="lazy"
           decoding="async"
-              src="https://c.animaapp.com/mnnib5ym6YgLgh/img/uploaded-asset-1779843092193-0.png"
+              src="/images/burkemuseum-1.png"
               alt=""
               aria-hidden="true"
               className="absolute pointer-events-none select-none"
@@ -1191,7 +1191,7 @@ const BurkeMuseumPage = () => {
             <img
           loading="lazy"
           decoding="async"
-              src="https://c.animaapp.com/mnnib5ym6YgLgh/img/uploaded-asset-1779843092194-1.png"
+              src="/images/burkemuseum-2.png"
               alt=""
               aria-hidden="true"
               className="absolute pointer-events-none select-none"
@@ -1207,7 +1207,7 @@ const BurkeMuseumPage = () => {
             <img
           loading="lazy"
           decoding="async"
-              src="https://c.animaapp.com/mnnib5ym6YgLgh/img/uploaded-asset-1779843092199-2.png"
+              src="/images/burkemuseum-3.png"
               alt=""
               aria-hidden="true"
               className="absolute pointer-events-none select-none"
