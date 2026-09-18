@@ -338,6 +338,22 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+/* Keyboard focus visibility — no third chrome color per the One Ink Rule,
+   so the ring follows each element's own text color instead of a fixed hue.
+   Mouse/touch focus stays silent; only keyboard (or other non-pointer) focus
+   shows the ring. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible,
+[role="link"]:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
 /* Section focus blur */
 .section-blur-wrapper {
   position: relative;
