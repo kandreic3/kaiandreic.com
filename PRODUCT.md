@@ -29,12 +29,12 @@ Single-page React/Vite app using HashRouter. Home page (`/`) shows a Hero and a 
   - **Burke Museum** and **OceanWatch** — college/academic projects, not paid or professional work.
 - This status distinction is a hard constraint: future copy or design must never present the academic projects as professional client/employer work, or vice versa.
 - `/studentworkflow` is an interactive prototype linked from the Chimu case study. It is currently a fixed-size (15,000 × 6,500px) absolutely-positioned canvas showing 3 login/onboarding screens — not responsive, and will not fit a normal viewport. It needs design attention (rebuild as a responsive walkthrough, or scope down what it demonstrates); left unfixed pending a product decision on what it should show.
-- Title convention (confirmed intentional, not a bug): "Product Designer" is the umbrella brand title (footer, page footers); each case study tags Kai's specific role on that project ("UX Designer", "UX Designer + Researcher"). Keep this distinction — it correctly signals a broader current title with project-specific role detail.
+- Title convention (updated 2026-09-18, direct user request): the footer/page-footer brand lockup now reads "UX Designer" site-wide, matching the per-case-study role tags ("UX Designer", "UX Designer + Researcher") instead of using a separate "Product Designer" umbrella title. The earlier distinction between an umbrella title and project-specific role tags no longer applies — "UX Designer" is now the one title used everywhere in the footer.
 
 ## Brand Commitments
 
 - Name: Kai Andreic.
-- Umbrella title: "Product Designer." Per-case-study role tags ("UX Designer", "UX Designer + Researcher") are intentionally more specific and should not be reconciled to a single title.
+- Umbrella title: "UX Designer" (footer brand lockup, unified with per-case-study role tags as of 2026-09-18). Case-study role tags may still be more specific where relevant ("UX Designer + Researcher").
 
 ## Evidence on Hand
 

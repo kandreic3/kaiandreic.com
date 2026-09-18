@@ -1,5 +1,5 @@
 ---
-name: Kai Andreic — Product Designer
+name: Kai Andreic — UX Designer
 description: An editorial, print-inspired portfolio that lets project imagery carry all the color while the chrome stays quiet.
 colors:
   paper-cream: "#fdfaf5"
@@ -62,7 +62,7 @@ components:
     textColor: "{colors.ink-black}"
 ---
 
-# Design System: Kai Andreic — Product Designer
+# Design System: Kai Andreic — UX Designer
 
 ## Overview
 
@@ -149,7 +149,7 @@ Square corners are the default: buttons, links, and containers carry no border-r
 - **Mobile:** hamburger → full-screen paper-cream overlay (`mobile-menu-enter`), links set in Display type at `32px`, staggered slide-up entrance (`animate-slide-up-menu`, 0.07s delay steps), each row divided by a `border-black/10` hairline rather than a card boundary.
 
 ### Footer
-- **Style:** three label-led columns ("Menu /", "Socials /", "Contact /") on a 12-col sub-grid, each column header using **The Slash Label Rule** below, followed by a stack of underline-on-hover links. Closes with an oversized Display-type brand lockup ("Kai Andreic" / "Product Designer") as the final full-bleed statement before the page ends.
+- **Style:** three label-led columns ("Menu /", "Socials /", "Contact /") on a 12-col sub-grid, each column header using **The Slash Label Rule** below, followed by a stack of underline-on-hover links. Closes with an oversized Display-type brand lockup ("Kai Andreic" / "UX Designer") as the final full-bleed statement before the page ends.
 
 ### Named Rules
 **The Slash Label Rule.** Any column or section eyebrow label is written as `Word /` (a trailing space-slash), never a colon, never all-caps-with-no-punctuation. It's the site's one recurring typographic flourish outside the two type families.
