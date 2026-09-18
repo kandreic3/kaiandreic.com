@@ -85,47 +85,12 @@ const RouteLoader = () => {
         inset: 0,
         zIndex: 9998,
         background: "#fdfaf5",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
         overflow: "hidden",
       }}
     >
-      {/* Same line-reveal entrance as the homepage hero, so route
-          transitions feel consistent with the site's own opening moment */}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          lineHeight: 1,
-        }}
-      >
-        <div
-          className="line-reveal-1 hero-editorial"
-          style={{
-            fontSize: "clamp(44px, 11vw, 100px)",
-            letterSpacing: "-0.04em",
-            color: "#1a1a1a",
-            lineHeight: 1,
-            paddingBottom: "0.18em",
-          }}
-        >
-          Product
-        </div>
-        <div
-          className="line-reveal-2 hero-editorial"
-          style={{
-            fontSize: "clamp(44px, 11vw, 100px)",
-            letterSpacing: "-0.04em",
-            color: "#1a1a1a",
-            lineHeight: 1,
-          }}
-        >
-          Designer
-        </div>
-      </div>
+      {/* Same black "water" rise as the initial site loader in index.html,
+          so route transitions feel consistent with the site's own opening moment */}
+      <div className="water-loader-fill" />
     </div>
   );
 };

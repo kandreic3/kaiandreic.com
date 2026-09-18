@@ -1445,7 +1445,7 @@ const OceanWatchPage = () => {
               }}
             >
               <span className="font-editorial">Kai Andreic</span>
-              <span className="font-editorial">Product Designer</span>
+              <span className="font-editorial">UX Designer</span>
             </div>
           </div>
           <div className="px-5 pb-5 flex justify-between items-center">
@@ -1457,7 +1457,7 @@ const OceanWatchPage = () => {
                   "'PP Neue Montreal','PPNeueMontreal','Neue Montreal',sans-serif",
               }}
             >
-              &#169; 2025 Kai Andreic
+              &#169; Kai Andreic
             </span>
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

@@ -147,7 +147,7 @@ export const Footer = () => {
                 "'PP Editorial Old', 'PPEditorialOld', Georgia, serif",
             }}
           >
-            Product Designer
+            UX Designer
           </div>
         </div>
         <div className="absolute box-border flex h-full justify-center pointer-events-none w-full z-0 left-0 top-0">
