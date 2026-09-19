@@ -69,7 +69,7 @@ const HomePage = () => {
       style={{ backgroundColor: "#fdfaf5" }}
     >
       <Navbar />
-      <h1 className="sr-only">Kai Andreic — Product Designer</h1>
+      <h1 className="sr-only">Kai Andreic — UX Designer</h1>
       <main className="box-border">
         <Hero />
       </main>
